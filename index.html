@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação do Plano Financeiro: Alana & Manoel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            position: absolute;
+            inset: 0;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+        .slide-content {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .highlight {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl mx-auto">
+        <!-- Presentation Container -->
+        <div id="presentation-container" class="relative w-full aspect-[16/9] bg-white rounded-lg overflow-hidden shadow-2xl">
+            
+            <!-- Slide 1: Capa -->
+            <div id="slide-1" class="slide active items-center text-center bg-slate-800 text-white p-8 sm:p-12">
+                <div class="slide-content w-full">
+                    <div class="mx-auto mb-8 h-20 sm:h-24 w-auto flex items-center justify-center">
+                        <svg viewBox="0 0 250 60" class="h-full">
+                            <g>
+                                <path d="M5 5 H 65 V 55 H 5 V 15 C 5 10 10 5 15 5 Z" fill="#38bdf8" rx="10" ry="10"></path>
+                                <polyline points="15,30 30,45 55,20" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                                <polyline points="15,20 30,35 55,10" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+                            </g>
+                            <g>
+                                <text x="80" y="36" font-family="Poppins, sans-serif" font-size="30" font-weight="bold" fill="white">vista</text>
+                                <text x="80" y="52" font-family="Poppins, sans-serif" font-size="11" letter-spacing="1" font-weight="300" fill="#38bdf8">INVESTIMENTOS</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl font-bold leading-tight">Construindo o Futuro de<br>Alana & Manoel</h1>
+                    <p class="text-lg sm:text-xl mt-4 text-gray-300">Uma Proposta de Assessoria Financeira e Patrimonial</p>
+                    <p class="mt-12 text-sm sm:text-base"><strong>Apresentado por:</strong> Guilherme Moreira, Private Banker</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Nosso Ponto de Partida -->
+            <div class="slide bg-white p-8 sm:p-16">
+                <div class="slide-content w-full">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 border-b-4 border-blue-500 pb-2 mb-6">Nosso Ponto de Partida</h2>
+                    <p class="text-base sm:text-lg text-gray-700 mb-6">Alana e Manoel, o objetivo desta conversa é traçar o caminho mais eficiente para que vocês alcancem seus grandes objetivos:</p>
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-start"><span class="text-blue-500 text-2xl mr-3">🚀</span><span class="text-gray-800 text-base sm:text-lg"><strong>Crescer os negócios:</strong> Alavancar a clínica, o e-commerce e os projetos de educação.</span></li>
+                        <li class="flex items-start"><span class="text-blue-500 text-2xl mr-3">👨‍👩‍👧</span><span class="text-gray-800 text-base sm:text-lg"><strong>Construir uma família:</strong> Com a chegada de um filho no horizonte de 1 a 2 anos.</span></li>
+                        <li class="flex items-start"><span class="text-blue-500 text-2xl mr-3">🏖️</span><span class="text-gray-800 text-base sm:text-lg"><strong>Alcançar a independência financeira:</strong> Com uma renda passiva de R$ 60.000 por mês.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Slide 3: Diagnóstico da Carteira Atual -->
+            <div class="slide items-center bg-slate-50 p-8 sm:p-16">
+                <div class="slide-content w-full text-center">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 border-b-4 border-red-500 pb-2 mb-6 inline-block">Diagnóstico da Carteira Atual</h2>
+                    <p class="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">Hoje, a carteira de vocês, apesar de ter bons ativos, apresenta um desalinhamento que pode atrasar seus planos.</p>
+                    <div class="mt-8 flex flex-col md:flex-row gap-4 max-w-3xl mx-auto">
+                        <div class="bg-white p-4 rounded-lg shadow-md flex-1">
+                            <h3 class="font-bold text-red-600">Renda Fixa</h3>
+                            <p class="text-gray-600 mt-2">A performance está próxima de 100% do CDI, um resultado seguro, mas que não acelera o crescimento patrimonial.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md flex-1">
+                             <h3 class="font-bold text-red-600">Renda Variável</h3>
+                            <p class="text-gray-600 mt-2">Com a baixa performance dos últimos anos, esta parte da carteira não contribuiu como poderia para o crescimento.</p>
+                        </div>
+                    </div>
+                     <p class="text-lg sm:text-xl mt-8 font-semibold text-slate-800 max-w-3xl mx-auto">O resultado é um portfólio que caminha, mas que poderia estar a correr em direção aos vossos objetivos.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4: O Plano de Aceleração -->
+            <div class="slide bg-white p-6 sm:p-8">
+                <div class="slide-content w-full text-center">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 border-b-4 border-green-500 pb-2 mb-4 inline-block">O Plano de Aceleração</h2>
+                    <p class="text-base text-gray-700 max-w-3xl mx-auto mb-4">Com uma estratégia otimizada, esta é a projeção para a independência financeira de vocês:</p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+                        <div class="bg-gray-50 p-4 rounded-lg h-full">
+                            <p class="text-xl text-gray-700">Meta de Patrimônio: <span class="font-bold">R$ 18.000.000</span></p>
+                            <p class="text-lg sm:text-2xl mt-3">Tempo estimado para alcançar a meta:</p>
+                            <p id="projection-result" class="text-4xl sm:text-6xl highlight">--</p>
+                            <div class="mt-3 text-lg text-gray-700">
+                              <p>Idade na independência:</p>
+                              <p><span id="alana-age" class="font-bold">--</span> (Alana) e <span id="manoel-age" class="font-bold">--</span> (Manoel)</p>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg h-full">
+                           <h3 class="text-xl sm:text-2xl font-bold text-slate-800">E depois de se aposentarem?</h3>
+                           <p class="text-base text-gray-600 mt-2">Com o património acumulado e uma rentabilidade conservadora (ex: 0,5% a.m. acima da inflação), as retiradas de R$ 60 mil não só se pagam, como o capital continua a crescer.</p>
+                           <p id="patrimony-duration" class="text-2xl sm:text-3xl text-blue-800 font-bold mt-4">Isso significa um património vitalício, que pode ser deixado como legado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: A Solução: Uma Visão de Futuro -->
+            <div class="slide items-center bg-sky-50 p-8 sm:p-16">
+                 <div class="slide-content w-full text-center">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 border-b-4 border-sky-500 pb-2 mb-6 inline-block">A Solução: Uma Visão de Futuro</h2>
+                    <p class="text-lg sm:text-2xl mt-6 font-semibold text-sky-800 max-w-3xl mx-auto">Com um plano claro, podemos colocar cada centavo a trabalhar para vocês da forma mais eficiente e segura.</p>
+                    <p class="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto mt-6">É isso que nossa parceria oferece. Uma estratégia centralizada que proporciona:</p>
+                    <div class="mt-6 text-left grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                        <div class="flex items-center"><span class="text-green-500 text-2xl mr-2">✅</span><span class="text-gray-800">Segurança e Liquidez</span></div>
+                        <div class="flex items-center"><span class="text-green-500 text-2xl mr-2">✅</span><span class="text-gray-800">Rentabilidade Otimizada</span></div>
+                        <div class="flex items-center"><span class="text-green-500 text-2xl mr-2">✅</span><span class="text-gray-800">Eficiência Empresarial</span></div>
+                        <div class="flex items-center"><span class="text-green-500 text-2xl mr-2">✅</span><span class="text-gray-800">Visão 360° e Parceria</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Nossa Estratégia em 3 Pilares -->
+            <div class="slide bg-white p-8 sm:p-12">
+                <div class="slide-content w-full">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 text-center mb-8">Nossa Estratégia em 3 Pilares</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="p-6 bg-gray-50 rounded-lg border-t-4 border-blue-500 h-full flex flex-col"><h3 class="text-xl font-bold text-slate-800">1. Pilar de Segurança</h3><p class="mt-2 text-gray-600 flex-grow">Construir uma reserva sólida e líquida para dar tranquilidade total contra imprevistos.</p></div>
+                        <div class="p-6 bg-gray-50 rounded-lg border-t-4 border-green-500 h-full flex flex-col"><h3 class="text-xl font-bold text-slate-800">2. Pilar de Crescimento</h3><p class="mt-2 text-gray-600 flex-grow">Carteira diversificada com nosso fundo exclusivo <strong>Strivo Yield 45</strong> (130-150% do CDI) como motor de rentabilidade.</p></div>
+                        <div class="p-6 bg-gray-50 rounded-lg border-t-4 border-indigo-500 h-full flex flex-col"><h3 class="text-xl font-bold text-slate-800">3. Pilar de Eficiência (PJ)</h3><p class="mt-2 text-gray-600 flex-grow">Ativar as <strong>Operações Compromissadas</strong> para rentabilizar o caixa da empresa diariamente.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Próximos Passos -->
+            <div class="slide items-center text-center bg-slate-800 text-white p-8 sm:p-12">
+                <div class="slide-content w-full">
+                    <h2 class="text-3xl sm:text-4xl font-bold">Nosso Compromisso é com o Futuro de Vocês</h2>
+                    <p class="text-lg sm:text-xl mt-4 text-gray-300 max-w-3xl mx-auto">Ao centralizar a gestão financeira conosco, vocês firmam uma parceria para a vida, não apenas contratam um banco.</p>
+                    <p class="text-2xl font-semibold mt-10">Vamos dar o próximo passo juntos?</p>
+                    <div class="mt-8 text-base sm:text-lg space-y-2">
+                        <p>1. Validação final da estratégia.</p><p>2. Início da abertura de contas (PF e PJ).</p><p>3. Desenho do plano de portabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between items-center mt-4">
+            <button id="prevBtn" class="bg-slate-600 text-white py-2 px-6 rounded-md hover:bg-slate-700 transition-colors disabled:bg-slate-300 disabled:cursor-not-allowed">Anterior</button>
+            <div id="slide-counter" class="text-gray-600"></div>
+            <button id="nextBtn" class="bg-blue-600 text-white py-2 px-6 rounded-md hover:bg-blue-700 transition-colors disabled:bg-slate-300 disabled:cursor-not-allowed">Próximo</button>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- SCRIPT PARA NAVEGAÇÃO DOS SLIDES ---
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideCounter = document.getElementById('slide-counter');
+            let currentSlide = 0;
+
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                slides[n].classList.add('active');
+                slideCounter.textContent = `${n + 1} / ${slides.length}`;
+                prevBtn.disabled = n === 0;
+                nextBtn.disabled = n === slides.length - 1;
+            }
+
+            nextBtn.addEventListener('click', () => { if (currentSlide < slides.length - 1) { currentSlide++; showSlide(currentSlide); } });
+            prevBtn.addEventListener('click', () => { if (currentSlide > 0) { currentSlide--; showSlide(currentSlide); } });
+            
+            // --- CÁLCULO DA PROJEÇÃO ---
+            function calculateProjection() {
+                let capital = 515000;
+                let monthlyContribution = 20000;
+                const targetCapital = 18000000;
+                const monthlyReturn = 0.01; // 1%
+                const annualContributionGrowth = 0.05;
+
+                let months = 0;
+                while (capital < targetCapital) {
+                    capital *= (1 + monthlyReturn);
+                    capital += monthlyContribution;
+                    months++;
+                    if (months % 12 === 0) {
+                        monthlyContribution *= (1 + annualContributionGrowth);
+                    }
+                }
+                
+                const years = Math.floor(months / 12);
+                const remainingMonths = months % 12;
+
+                // Idades
+                const initialAlanaAge = 36;
+                const initialManoelAge = 38;
+                const finalAlanaAge = initialAlanaAge + years;
+                const finalManoelAge = initialManoelAge + years;
+
+
+                document.getElementById('projection-result').textContent = `${years} anos e ${remainingMonths} meses`;
+                document.getElementById('alana-age').textContent = `${finalAlanaAge} anos`;
+                document.getElementById('manoel-age').textContent = `${finalManoelAge} anos`;
+
+                // Verificação da sustentabilidade
+                const conservativeReturn = 18000000 * 0.005;
+                const withdrawal = 60000;
+                if (conservativeReturn > withdrawal) {
+                     // O texto já está no HTML, então não precisamos adicionar mais nada dinamicamente.
+                }
+            }
+            
+            // Inicializa a apresentação
+            showSlide(currentSlide);
+            calculateProjection();
+        });
+    </script>
+</body>
+</html>
